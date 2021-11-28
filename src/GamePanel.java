@@ -43,17 +43,17 @@ void drawMenuState(Graphics g) {
 	g.setColor(Color.BLUE);
 	g.fillRect(0, 0, Tylerstache.WIDTH, Tylerstache.HEIGHT);
 	g.setFont(titleFont);
-	g.setColor(Color.YELLOW);
-	g.drawString("Me Game", 25, 100);
+	g.setColor(Color.green);
+	g.drawString("Mee Game", 25, 100);
 	g.setFont(somethingFont);
-	g.setColor(Color.YELLOW);
+	g.setColor(Color.green);
 	g.drawString("Press Enter to Start", 100, 250);
 	g.setFont(somethingFont);
-	g.setColor(Color.YELLOW);
+	g.setColor(Color.green);
 	g.drawString("Press Space to See Instructions", 50, 400);
 }
 void drawGameState(Graphics g) {  
-	g.setColor(Color.YELLOW);
+	g.setColor(Color.green);
 	g.fillRect(0, 0, Tylerstache.WIDTH, Tylerstache.HEIGHT);
 	play.draw(g);
 }
@@ -61,12 +61,12 @@ void drawEndState(Graphics g)  {
 	g.setColor(Color.RED);
 	g.fillRect(0, 0, Tylerstache.WIDTH, Tylerstache.HEIGHT);
 	g.setFont(titleFont);
-	g.setColor(Color.YELLOW);
+	g.setColor(Color.green);
 	g.drawString("GAME OVER", 25, 100);
 	g.setFont(somethingFont);
-	g.setColor(Color.YELLOW);
+	g.setColor(Color.green);
 	g.drawString("You Score is", 50, 250);
-	g.setColor(Color.YELLOW);
+	g.setColor(Color.green);
 	g.drawString("Press Enter to Restart", 50, 400);
 	
 }
@@ -91,7 +91,7 @@ public void paintComponent(Graphics g){
 		}else if(currentState == END){
 		    updateEndState();
 		}
-		    //System.out.println("action");
+		    System.out.println("action");
 		    repaint();
 		
 	}
@@ -112,9 +112,7 @@ public void paintComponent(Graphics g){
 		}
 		if (e.getKeyCode()==KeyEvent.VK_UP) {
 			if (currentState==GAME) {
-				if（y-=0）{
 				
-				}
 				play.y-=5;
 				
 				
