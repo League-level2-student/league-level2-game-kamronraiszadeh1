@@ -58,7 +58,7 @@ void drawGameState(Graphics g) {
 	play.draw(g);
 }
 void drawEndState(Graphics g)  {
-	g.setColor(Color.RED);
+	g.setColor(Color.RED );
 	g.fillRect(0, 0, Tylerstache.WIDTH, Tylerstache.HEIGHT);
 	g.setFont(titleFont);
 	g.setColor(Color.green);
