@@ -11,7 +11,7 @@ public class Player extends GameObject{
 	}
 			
 			void draw(Graphics g){
-				 g.setColor(Color.BLUE);
+				 g.setColor(Color.RED);
 		        g.fillRect(x, y, width, height);
 			}
 			

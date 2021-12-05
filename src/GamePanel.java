@@ -25,7 +25,7 @@ public class GamePanel extends JPanel implements ActionListener,KeyListener  {
 	GamePanel(){
 	titleFont = new Font("Arial", Font.PLAIN, 48);
 	somethingFont = new Font("Arial", Font.PLAIN, 30);
-	frameDraw = new Timer(1000/60,this);
+	frameDraw = new Timer(1000/50,this);
 	frameDraw.start();
 	
 }
@@ -44,7 +44,7 @@ void drawMenuState(Graphics g) {
 	g.fillRect(0, 0, Tylerstache.WIDTH, Tylerstache.HEIGHT);
 	g.setFont(titleFont);
 	g.setColor(Color.green);
-	g.drawString("Mee Game", 25, 100);
+	g.drawString("Meee Game", 26, 100);
 	g.setFont(somethingFont);
 	g.setColor(Color.green);
 	g.drawString("Press Enter to Start", 100, 250);
@@ -91,7 +91,7 @@ public void paintComponent(Graphics g){
 		}else if(currentState == END){
 		    updateEndState();
 		}
-		    System.out.println("action");
+		    System.out.println("go");
 		    repaint();
 		
 	}
@@ -116,7 +116,7 @@ public void paintComponent(Graphics g){
 				play.y-=5;
 				
 				
-				System.out.println("Jump");
+				System.out.println("move");
 		}}
 		if (e.getKeyCode()==KeyEvent.VK_DOWN) {
 			play.y+=5;
